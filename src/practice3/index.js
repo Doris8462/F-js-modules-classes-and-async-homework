@@ -5,13 +5,13 @@ export const getPoetry = () => {
     headers: {
       "Content-Type": "application/json",
     },
-    credentials: "same-origin"
+    credentials: "same-origin",
   })
-    .then(response => response.json())
-    .then(data => {
+    .then((response) => response.json())
+    .then((data) => {
       return [data.origin, data.author, data.content];
     })
-    .catch(err => console.log(err))
+    .catch((err) => console.log(err));
 };
 
 // export const getPoetry = async () => {
