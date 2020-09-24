@@ -19,6 +19,7 @@ export const getPoetry = () => {
 // export const getPoetry = async () => {
 //   const url = "https://v1.jinrishici.com/all.json";
 //   try {
+// TODO feedback：两个await可以拆成两个行，可读性会更高些
 //     const data = await (await fetch(url)).json();
 //     return [data.origin, data.author, data.content];
 //   }
